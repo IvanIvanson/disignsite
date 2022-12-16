@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Inter:wght@100;200;300;400&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300&family=Mulish:wght@200&family=Open+Sans:wght@300&family=Playfair+Display&family=Raleway:wght@500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.container .header-nav {
+  width: 100%;
+  z-index: 100;
+  background: #282828;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.container .header-nav .header-nav_container {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+  container-type: inline-size;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .header-nav .header-nav_container .logo {
+  width: 9cqi;
+  height: 6cqi;
+  margin-left: 9cqi;
+}
+
+.container .header-nav .header-nav_container .tel-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4cqi;
+  padding-left: 9cqi;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 2cqi;
+}
+
+.container .header-nav .header-nav_container .tel-mail .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.container .header-nav .header-nav_container .tel-mail .tel img {
+  padding-right: 10px;
+  width: 3cqi;
+}
+
+.container .header-nav .header-nav_container .tel-mail .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.container .header-nav .header-nav_container .tel-mail .mail img {
+  padding-right: 10px;
+  width: 3cqi;
+}
+
+.container .header-nav .header-nav_container .burger-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger {
+  position: relative;
+  background: #00A0E3;
+  width: 9cqi;
+  height: 8cqi;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu {
+  display: none;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu:checked ~ .main-menu {
+  max-height: 500px;
+  font-size: 16px;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu:checked ~ .burger-line:nth-last-of-type(1),
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu:checked ~ .burger-line:nth-last-of-type(4) {
+  display: none;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu:checked ~ .burger-line:nth-last-of-type(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger #check-menu:checked ~ .burger-line:nth-last-of-type(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger label {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  line-height: 40px;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .burger-line {
+  position: absolute;
+  top: 30%;
+  right: 20%;
+  width: 70%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .burger-line:nth-of-type(2) {
+  height: 2px;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .burger-line:nth-of-type(2),
+.container .header-nav .header-nav_container .burger-phone .burger .burger-line:nth-of-type(3) {
+  top: 50%;
+  width: 50%;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .burger-line:nth-of-type(4) {
+  top: 70%;
+  width: 50%;
+  height: 2px;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .main-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  max-height: 0;
+  font-size: 0;
+  overflow: hidden;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .main-menu a {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  text-shadow: 0px 0px 1px #000, 1px 0px 1px #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .main-menu a:not(:first-child) {
+  border-top: solid gray 1px;
+}
+
+.container .header-nav .header-nav_container .burger-phone .burger .main-menu a:hover {
+  background-color: orange;
+}
+
+.container .header-nav .header-nav_container .burger-phone .phone {
+  padding: 2cqi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 9cqi;
+  height: 8cqi;
+}
+
+.container .header-nav .header-nav_container .burger-phone .phone a img {
+  width: 3cqi;
+}
+
+.container .header-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 45cqi;
+  background: black url(../../img/headerbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  container-type: inline-size;
+}
+
+.container .header-main h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 5cqi;
+  line-height: 6cqi;
+  color: white;
+}
+
+.container .header-main p {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 2cqi;
+  color: white;
+  padding-top: 3cqi;
+  padding-bottom: 9cqi;
+}
+
+.container .header-main button {
+  padding: 1.5cqi 4cqi;
+  background: linear-gradient(110.45deg, #0095C3 13%, #126D92 87%);
+  color: white;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2cqi;
+  line-height: 2cqi;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+@media (max-width: 770px) {
+  .container header .header-nav .header-nav_container .tel-mail .tel img {
+    padding-right: 5px;
+    width: 4cqi;
+  }
+  .container header .header-nav .header-nav_container .tel-mail .mail img {
+    padding-right: 5px;
+    width: 4cqi;
+  }
+}
+
+.container main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 7cqi;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #E7E7E7), color-stop(113.44%, #BBBBBB));
+  background: linear-gradient(90deg, #E7E7E7 50%, #BBBBBB 113.44%);
+  border: solid #15bb3e 2px;
+}
+
+.container main h1 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4cqi;
+  line-height: 5cqi;
+  width: 100%;
+  padding-left: 7cqi;
+}
+
+.container main h1 span {
+  color: #00A0E3;
+}
+
+.container main .cart-block {
+  border: solid #5709d4 2px;
+  width: 100cqi;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 7cqi;
+  padding-right: 7cqi;
+}
+
+.container main .cart-block .main-cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 40cqi;
+  border: solid red 2px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 5cqi;
+}
+
+.container main .cart-block .main-cart img {
+  width: 9cqi;
+}
+
+.container main .cart-block .main-cart p {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2cqi;
+  line-height: 2cqi;
+  text-align: center;
+  padding-top: 3cqi;
+  padding-bottom: 5cqi;
+}
+
+.container main .map-block {
+  width: 100cqi;
+  padding-left: 7cqi;
+  padding-right: 7cqi;
+  padding-top: 7cqi;
+  padding-bottom: 9cqi;
+  background-color: #434242;
+}
+
+.container main .map-block h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2cqi;
+  line-height: 2cqi;
+  text-align: center;
+  padding-top: 3cqi;
+  color: white;
+}
+
+.container main .tur-block {
+  position: relative;
+  width: 100cqi;
+  height: 60cqi;
+  background: black url(../../img/turbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container main .tur-block h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4cqi;
+  line-height: 5cqi;
+  padding-top: 7cqi;
+  padding-left: 7cqi;
+  padding-bottom: 0;
+  color: white;
+}
+
+.container main .tur-block .crcl1 {
+  position: absolute;
+  left: 7cqi;
+  top: 15cqi;
+  width: 7cqi;
+  height: 35cqi;
+}
+
+.container main .tur-block .crcl2 {
+  position: absolute;
+  left: 25cqi;
+  top: 25cqi;
+  width: 7cqi;
+  height: 35cqi;
+}
+
+.container main .tur-block .crcl3 {
+  position: absolute;
+  left: 41cqi;
+  top: 19cqi;
+  width: 7cqi;
+  height: 20cqi;
+}
+
+.container main .tur-block .crcl4 {
+  position: absolute;
+  left: 61cqi;
+  top: 40cqi;
+  width: 17cqi;
+  height: 20cqi;
+}
+
+.container main .tur-block .crcl5 {
+  position: absolute;
+  left: 70cqi;
+  top: 10cqi;
+  width: 22cqi;
+  height: 20cqi;
+}
+
+.container main .tur-block .crci1-p {
+  position: absolute;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 3cqi;
+  max-width: 25cqi;
+  padding-top: 3cqi;
+  margin-left: 17cqi;
+}
+
+.container main .tur-block .crci2-p {
+  position: absolute;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 3cqi;
+  max-width: 28cqi;
+  margin-top: 40cqi;
+  margin-left: 35cqi;
+}
+
+.container main .tur-block .crci3-p {
+  position: absolute;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 3cqi;
+  max-width: 25cqi;
+  margin-top: 18cqi;
+  margin-left: 50cqi;
+}
+
+.container main .tur-block .crci4-p {
+  position: absolute;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 3cqi;
+  max-width: 10cqi;
+  margin-top: 5cqi;
+  margin-left: 80cqi;
+}
+
+.container main .tur-block .crci5-p {
+  position: absolute;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-weight: 400;
+  font-size: 2cqi;
+  line-height: 3cqi;
+  max-width: 20cqi;
+  margin-top: 35cqi;
+  margin-left: 70cqi;
+}
+
+@media (max-width: 770px) {
+  .container main .cart-block .main-cart {
+    min-width: 49cqi;
+  }
+}
+/*# sourceMappingURL=style.css.map */

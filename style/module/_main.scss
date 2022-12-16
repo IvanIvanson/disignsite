@@ -1,0 +1,200 @@
+@import 'mixin';
+main{
+    display:flex;
+    flex:1;
+    flex-wrap: wrap;
+    padding-top: 7cqi;
+    
+    background: linear-gradient(90deg, #E7E7E7 50%, #BBBBBB 113.44%);
+     border: solid rgb(21, 187, 62) 2px;
+    h1{
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 4cqi;
+line-height: 5cqi;
+width: 100%;
+padding-left: 7cqi;
+
+span{
+    color: #00A0E3;
+}
+    }
+    .cart-block{
+         border: solid rgb(87, 9, 212) 2px;
+         width: 100cqi;
+         display: flex;
+        position: relative;
+         flex-wrap: wrap;
+         justify-content: center;
+         padding-left: 7cqi;
+    padding-right: 7cqi;
+         .main-cart{
+         @include  flex-center-center;
+         flex-direction: column;
+         flex: 1;
+        //  min-width: 320px;
+         min-width: 40cqi;
+         border: solid red 2px;
+         align-self: center;
+         padding-top: 5cqi;
+        
+         img{
+            width: 9cqi;
+         }
+         p{
+            font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 2cqi;
+line-height: 2cqi;
+text-align: center;
+ padding-top: 3cqi;
+ padding-bottom: 5cqi;
+         }
+    }
+    }
+   .map-block{
+     width: 100cqi;
+    padding-left: 7cqi;
+    padding-right: 7cqi;
+    padding-top: 7cqi;
+    padding-bottom: 9cqi;
+    background-color: #434242;
+    h2{
+         font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 2cqi;
+line-height: 2cqi;
+text-align: center;
+ padding-top: 3cqi;
+ color: white;
+    }
+   }
+   .tur-block{
+    position: relative;
+    width: 100cqi;
+    height: 60cqi;
+       background: rgba(0, 0, 0, 1) url(../../img/turbg.png);
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: cover;
+       h1{
+         font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 4cqi;
+line-height: 5cqi;
+padding-top: 7cqi;
+padding-left: 7cqi;
+padding-bottom: 0;
+ color: white;
+       }
+       .crcl1{
+        position: absolute;
+       left: 7cqi;
+       top: 15cqi;
+        width: 7cqi;
+        height: 35cqi;
+       }
+        .crcl2{
+        position: absolute;
+       left: 25cqi;
+        top: 25cqi;
+        width: 7cqi;
+        height: 35cqi;
+       }
+       .crcl3{
+        position: absolute;
+       left: 41cqi;
+        top: 19cqi;
+        width: 7cqi;
+        height: 20cqi;
+       }
+        .crcl4{
+        position: absolute;
+       left: 61cqi;
+        top: 40cqi;
+        width: 17cqi;
+        height: 20cqi;
+       }
+        .crcl5{
+        position: absolute;
+       left: 70cqi;
+        top: 10cqi;
+        width: 22cqi;
+        height: 20cqi;
+       }
+       .crci1-p{
+        position: absolute;
+         display: inline;
+        font-family: 'Montserrat', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 2cqi;
+line-height: 3cqi;
+max-width: 25cqi;
+ padding-top: 3cqi;
+ margin-left: 17cqi;
+       }
+        .crci2-p{
+             position: absolute;
+             display: inline;
+        font-family: 'Montserrat', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 2cqi;
+line-height: 3cqi;
+max-width: 28cqi;
+ margin-top: 40cqi;
+ margin-left: 35cqi;
+       }
+        .crci3-p{
+            position: absolute;
+            display: inline;
+        font-family: 'Montserrat', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 2cqi;
+line-height: 3cqi;
+max-width: 25cqi;
+ margin-top: 18cqi;
+ margin-left: 50cqi;
+       }
+        .crci4-p{
+            position: absolute;
+            display: inline;
+        font-family: 'Montserrat', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 2cqi;
+line-height: 3cqi;
+max-width: 10cqi;
+ margin-top: 5cqi;
+ margin-left: 80cqi;
+       }
+        .crci5-p{
+            position: absolute;
+            display: inline;
+        font-family: 'Montserrat', sans-serif;
+color: white;
+font-weight: 400;
+font-size: 2cqi;
+line-height: 3cqi;
+max-width: 20cqi;
+ margin-top: 35cqi;
+ margin-left: 70cqi;
+       }
+   }
+}
+
+@media (max-width:770px) {
+    main{
+        .cart-block{
+.main-cart{
+     min-width: 49cqi;
+}
+}
+    }
+
+}

@@ -1,0 +1,14 @@
+@import 'module/vars';
+@import 'module/fonts';
+@import 'module/globalstyles';
+
+
+.container{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    @import 'module/header';
+    @import 'module/main';
+    @import 'module/footer';
+
+}
