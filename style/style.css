@@ -243,7 +243,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 45cqi;
-  background: black url(../../img/headerbg.png);
+  background: black url(./img/headerbg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -307,7 +307,6 @@
   padding-top: 7cqi;
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #E7E7E7), color-stop(113.44%, #BBBBBB));
   background: linear-gradient(90deg, #E7E7E7 50%, #BBBBBB 113.44%);
-  border: solid #15bb3e 2px;
 }
 
 .container main h1 {
@@ -325,7 +324,6 @@
 }
 
 .container main .cart-block {
-  border: solid #5709d4 2px;
   width: 100cqi;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,7 +356,6 @@
       -ms-flex: 1;
           flex: 1;
   min-width: 40cqi;
-  border: solid red 2px;
   -ms-flex-item-align: center;
       align-self: center;
   padding-top: 5cqi;
