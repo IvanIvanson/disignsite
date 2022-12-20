@@ -3,7 +3,7 @@ main{
     display:flex;
     flex:1;
     flex-wrap: wrap;
-    padding-top: 7cqi;
+    padding-top: calc(25px + (50 - 16) * (100vw - 320px) / (1280 - 320));
     
     background: linear-gradient(90deg, #E7E7E7 50%, #BBBBBB 113.44%);
     
@@ -11,10 +11,10 @@ main{
         font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 4cqi;
-line-height: 5cqi;
+font-size: calc(20px + (50 - 10) * (100vw - 320px) / (1280 - 320));
+line-height: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
 width: 100%;
-padding-left: 7cqi;
+padding-left: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
 
 span{
     color: #00A0E3;
@@ -22,51 +22,51 @@ span{
     }
     .cart-block{
          
-         width: 100cqi;
+        //  width: 100cqi;
          display: flex;
         position: relative;
          flex-wrap: wrap;
          justify-content: center;
-         padding-left: 7cqi;
-    padding-right: 7cqi;
+         padding-left: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+    padding-right: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
          .main-cart{
          @include  flex-center-center;
          flex-direction: column;
          flex: 1;
-        //  min-width: 320px;
-         min-width: 40cqi;
+         min-width: 50%;
+        //  min-width: 40cqi;
         
          align-self: center;
-         padding-top: 5cqi;
+         padding-top: calc(25px + (50 - 16) * (100vw - 320px) / (1280 - 320));
         
          img{
-            width: 9cqi;
+            width:  calc(60px + (60 - 16) * (100vw - 320px) / (1280 - 320));
          }
          p{
             font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 2cqi;
-line-height: 2cqi;
+font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(26px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 text-align: center;
- padding-top: 3cqi;
- padding-bottom: 5cqi;
+ padding-top: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+ padding-bottom: calc(26px + (20 - 16) * (100vw - 320px) / (1280 - 320));
          }
     }
     }
    .map-block{
-     width: 100cqi;
-    padding-left: 7cqi;
-    padding-right: 7cqi;
-    padding-top: 7cqi;
-    padding-bottom: 9cqi;
+     width: 100%;
+    padding-left: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+    padding-right: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+    padding-top: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+    padding-bottom: calc(40px + (50 - 16) * (100vw - 320px) / (1280 - 320));
     background-color: #434242;
     h2{
          font-family: 'Montserrat', sans-serif;
 font-style: normal;
 font-weight: 300;
-font-size: 2cqi;
-line-height: 2cqi;
+font-size: calc(20px + (25 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(26px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 text-align: center;
  padding-top: 3cqi;
  color: white;
@@ -74,8 +74,8 @@ text-align: center;
    }
    .tur-block{
     position: relative;
-    width: 100cqi;
-    height: 60cqi;
+    width: 100%;
+    height: calc(300px + (900 - 350) * (100vw - 320px) / (1280 - 320));
        background: rgba(0, 0, 0, 1) url(../img/turbg.png);
        background-repeat: no-repeat;
        background-position: center;
@@ -83,26 +83,26 @@ text-align: center;
        h1{
          font-family: 'Montserrat', sans-serif;
 font-weight: 700;
-font-size: 4cqi;
-line-height: 5cqi;
-padding-top: 7cqi;
-padding-left: 7cqi;
+font-size: calc(20px + (45 - 10) * (100vw - 320px) / (1280 - 320));
+line-height: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+padding-top: calc(35px + (35 - 16) * (100vw - 320px) / (1280 - 320));
+padding-left: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
 padding-bottom: 0;
  color: white;
        }
        .crcl1{
         position: absolute;
-       left: 7cqi;
-       top: 15cqi;
-        width: 7cqi;
-        height: 35cqi;
+       left: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+       top: calc(90px + (90 - 10) * (100vw - 320px) / (1280 - 320));
+        width: calc(40px + (60 - 16) * (100vw - 320px) / (1280 - 320));
+        height: calc(200px + (250 - 60) * (100vw - 320px) / (1280 - 320));
        }
         .crcl2{
         position: absolute;
-       left: 25cqi;
-        top: 25cqi;
-        width: 7cqi;
-        height: 35cqi;
+       left: calc(100px + (220 - 16) * (100vw - 320px) / (1280 - 320));
+       top: calc(100px + (220 - 10) * (100vw - 320px) / (1280 - 320));
+        width: calc(40px + (60 - 16) * (100vw - 320px) / (1280 - 320));
+        height: calc(200px + (250 - 60) * (100vw - 320px) / (1280 - 320));
        }
        .crcl3{
         position: absolute;
