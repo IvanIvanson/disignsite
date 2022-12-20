@@ -528,7 +528,7 @@
 
 @media (max-width: 770px) {
   .container main .cart-block .main-cart {
-    min-width: 49cqi;
+    min-width: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */
