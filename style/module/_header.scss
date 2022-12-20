@@ -15,31 +15,31 @@
     width:100%;
     color:white;
     text-align:center;
-     container-type: inline-size;
+    
 display: flex;
 justify-content: space-between;
 align-items: center;
 .logo{
-    width: 9cqi;
-    height: 6cqi;
-    margin-left: 9cqi;
+    width: calc(66px + (100 - 56) * (100vw - 320px) / (1280 - 320));
+    height: calc(30px + (70 - 30) * (100vw - 320px) / (1280 - 320));
+    margin-left: calc(30px + (100 - 60) * (100vw - 320px) / (1280 - 320));
 }
 .tel-mail{
     display: flex;
-    gap: 4cqi;
-    padding-left: 9cqi;
+    gap: calc(16px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+    padding-left: calc(16px + (50 - 16) * (100vw - 320px) / (1280 - 320));
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 2cqi;
-line-height: 2cqi;
+font-size: calc(10px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(10px + (20 - 16) * (100vw - 320px) / (1280 - 320));
     .tel{
    @include  flex-center-center;
      color:white;
      text-decoration: none;
    img{
      padding-right: 10px;
-     width: 3cqi;
+     width: calc(26px + (50 - 46) * (100vw - 320px) / (1280 - 320));
    }
   
 }
@@ -49,7 +49,7 @@ line-height: 2cqi;
      text-decoration: none;
      img{
         padding-right: 10px;
-        width: 3cqi;
+        width: calc(26px + (50 - 46) * (100vw - 320px) / (1280 - 320));
      }
 }
 }
@@ -59,8 +59,8 @@ line-height: 2cqi;
 .burger{
     position: relative;
     background: #00A0E3;
-    width: 9cqi;
-    height: 8cqi;
+    width: calc(50px + (90 - 50) * (100vw - 320px) / (1280 - 320));
+    height: calc(50px + (90 - 50) * (100vw - 320px) / (1280 - 320));
    
 #check-menu{
     display:none;
@@ -149,16 +149,16 @@ border-top:solid gray 1px;
 }
 }
 .phone{
-    padding: 2cqi;
+    padding: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: white;
-    width: 9cqi;
-    height: 8cqi;
+     width: calc(50px + (90 - 50) * (100vw - 320px) / (1280 - 320));
+    height: calc(50px + (90 - 50) * (100vw - 320px) / (1280 - 320));
    a{
     img{
-        width: 3cqi;
+        width: calc(30px + (40 - 16) * (100vw - 320px) / (1280 - 320));
         
     }
    }
@@ -176,18 +176,18 @@ border-top:solid gray 1px;
     .header-main{
        @include  flex-center-center;
        flex-direction: column;
-       height: 45cqi;
+       height: calc(400px + (600 - 400) * (100vw - 320px) / (1280 - 320));
        background: rgba(0, 0, 0, 1) url(../img/headerbg.png);
        background-repeat: no-repeat;
        background-position: center;
        background-size: cover;
-       container-type: inline-size;
+      
         h1{
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 900;
-font-size: 5cqi;
-line-height: 6cqi;
+font-size: calc(30px + (50 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(40px + (50 - 16) * (100vw - 320px) / (1280 - 320));
 color: white;
 
         }
@@ -195,21 +195,22 @@ color: white;
             font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 2cqi;
-line-height: 2cqi;
+text-align: center;
+font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(26px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 color: white;
-padding-top: 3cqi;
-padding-bottom: 9cqi;
+padding-top: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+padding-bottom: calc(50px + (20 - 16) * (100vw - 320px) / (1280 - 320));
         }
         button{
-            padding: 1.5cqi 4cqi;
+            padding:  calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320))  calc(26px + (20 - 16) * (100vw - 320px) / (1280 - 320));
             background: linear-gradient(110.45deg, #0095C3 13%, #126D92 87%);
             color: white;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 2cqi;
-line-height: 2cqi;
+font-size: calc(16px + (20 - 16) * (100vw - 320px) / (1280 - 320));
+line-height: calc(20px + (20 - 16) * (100vw - 320px) / (1280 - 320));
 border: none;
 cursor: pointer;
 border-radius: 50px;
@@ -247,4 +248,16 @@ border-radius: 50px;
     
    
  
+}
+
+@media (max-width:425px) {
+   
+       .header-nav{
+ .header-nav_container{
+        
+ .tel-mail{
+display:none;
+ }
+}
+}
 }
