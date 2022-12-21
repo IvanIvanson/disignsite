@@ -441,26 +441,26 @@
 
 .container main .tur-block .crcl3 {
   position: absolute;
-  left: 41cqi;
-  top: 19cqi;
-  width: 7cqi;
-  height: 20cqi;
+  left: 41%;
+  top: 25%;
+  width: 7%;
+  height: 30%;
 }
 
 .container main .tur-block .crcl4 {
   position: absolute;
-  left: 61cqi;
-  top: 40cqi;
-  width: 17cqi;
-  height: 20cqi;
+  left: 64%;
+  top: 60%;
+  width: 15%;
+  height: 25%;
 }
 
 .container main .tur-block .crcl5 {
   position: absolute;
-  left: 70cqi;
-  top: 10cqi;
-  width: 22cqi;
-  height: 20cqi;
+  left: 74%;
+  top: 18%;
+  width: 20%;
+  height: 25%;
 }
 
 .container main .tur-block .crci1-p {
@@ -469,11 +469,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2cqi;
-  line-height: 3cqi;
-  max-width: 25cqi;
-  padding-top: 3cqi;
-  margin-left: 17cqi;
+  font-size: calc(7px + (35 - 15) * (100vw - 320px) / (1280 - 320));
+  line-height: calc(16px + (30 - 16) * (100vw - 320px) / (1280 - 320));
+  max-width: 25%;
+  padding-top: 5%;
+  left: 20%;
 }
 
 .container main .tur-block .crci2-p {
@@ -482,11 +482,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2cqi;
-  line-height: 3cqi;
-  max-width: 28cqi;
-  margin-top: 40cqi;
-  margin-left: 35cqi;
+  font-size: calc(7px + (35 - 15) * (100vw - 320px) / (1280 - 320));
+  line-height: calc(16px + (30 - 16) * (100vw - 320px) / (1280 - 320));
+  max-width: 25%;
+  padding-top: 45%;
+  margin-left: 35%;
 }
 
 .container main .tur-block .crci3-p {
@@ -495,11 +495,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2cqi;
-  line-height: 3cqi;
-  max-width: 25cqi;
-  margin-top: 18cqi;
-  margin-left: 50cqi;
+  font-size: calc(7px + (35 - 15) * (100vw - 320px) / (1280 - 320));
+  line-height: calc(16px + (30 - 16) * (100vw - 320px) / (1280 - 320));
+  max-width: 25%;
+  top: calc(86px + (280 - 16) * (100vw - 320px) / (1280 - 320));
+  left: calc(156px + (560 - 56) * (100vw - 320px) / (1280 - 320));
 }
 
 .container main .tur-block .crci4-p {
@@ -508,11 +508,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2cqi;
-  line-height: 3cqi;
-  max-width: 10cqi;
-  margin-top: 5cqi;
-  margin-left: 80cqi;
+  font-size: calc(7px + (35 - 15) * (100vw - 320px) / (1280 - 320));
+  line-height: calc(16px + (30 - 16) * (100vw - 320px) / (1280 - 320));
+  max-width: 15%;
+  top: calc(66px + (480 - 296) * (100vw - 320px) / (1280 - 320));
+  left: calc(280px + (760 - 36) * (100vw - 320px) / (1280 - 320));
 }
 
 .container main .tur-block .crci5-p {
@@ -521,11 +521,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: 400;
-  font-size: 2cqi;
-  line-height: 3cqi;
-  max-width: 20cqi;
-  margin-top: 35cqi;
-  margin-left: 70cqi;
+  font-size: calc(7px + (35 - 15) * (100vw - 320px) / (1280 - 320));
+  line-height: calc(16px + (30 - 16) * (100vw - 320px) / (1280 - 320));
+  max-width: 25%;
+  top: calc(186px + (480 - 86) * (100vw - 320px) / (1280 - 320));
+  left: calc(230px + (850 - 200) * (100vw - 320px) / (1280 - 320));
 }
 
 @media (max-width: 770px) {
