@@ -1,9 +1,10 @@
   const main = document.querySelector("#main");
   const btnMenu = document.querySelector(".burger");
-const menu = document.querySelector(".menu");
+  const menu = document.querySelector(".menu");
   const headerMain = document.querySelector(".header-main");
   let h1 = document.querySelectorAll("h1");
-  let p = document.querySelectorAll("p")
+  let p = document.querySelectorAll("p");
+  let btn = document.querySelectorAll("button");
   btnMenu.addEventListener("click", function () {
     menu.classList.toggle("active");
     btnMenu.classList.toggle("burgerActive");
@@ -14,5 +15,8 @@ const menu = document.querySelector(".menu");
       });
       p.forEach((item) => {
           item.classList.toggle("pactive");
+      });
+      btn.forEach((item) => {
+          item.classList.toggle("btnactive");
       });
   });

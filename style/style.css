@@ -305,6 +305,11 @@
   border-radius: 50px;
 }
 
+.container .header-main .btnactive {
+  background: #333;
+  color: #555;
+}
+
 .container .header-active {
   background: rgba(0, 0, 0, 0.9);
 }
